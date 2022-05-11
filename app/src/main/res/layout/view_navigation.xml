@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/botao">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voltar_setinha"
+            android:layout_centerVertical="true"/>
+
+        <Button android:id="@+id/btnEsquerda"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_alignLeft="@+id/imgVoltar"
+            android:layout_alignRight="@+id/imgVoltar"
+            android:onClick="voltar"/>
+
+    </RelativeLayout>
+
+
+    <TextView android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textAllCaps="true"
+        android:textColor="@color/branco"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
